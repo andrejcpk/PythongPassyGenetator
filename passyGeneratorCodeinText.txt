@@ -1,0 +1,21 @@
+import random
+
+characters = "123456789abcdefghjkmnpqrstuxyzABCDEFGHJKMNPQRSTUVWXYZ"
+#Add to make password more secure -_=$/!€'[*]?
+#Removed i, I, l, L, w, v, o, O, 0 because of similarity
+chars = True
+
+all = ""
+
+if chars:
+    all += characters
+
+lenght = 16
+passy = 1
+
+for x in range(passy):
+    password = "".join(random.sample(all, lenght))
+    print("This is your password --->  " + password)
+    #print("Highlight and Copy with Right Click\n" + "--------------------------------------------")
+
+input('Press ENTER to exit')
